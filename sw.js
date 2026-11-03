@@ -1,4 +1,4 @@
-const CACHE = "finova-static-v4";
+const CACHE = "finova-static-v5";
 const FILES = ["./", "./index.html", "./manifest.webmanifest", "./favicon.svg", "./auth.js"];
 self.addEventListener("install", event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES)));
