@@ -1,7 +1,7 @@
 /* FINOVA Supabase authentication + automatic cloud backup */
 (() => {
   const SUPABASE_URL = "https://tfmvatyndyctzgdpkctk.supabase.co";
-  const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_sZfSjQ8XU3qwnFpAecoRB_QB3svKJKA";
+  const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_sZfSjQ8XU3qwnFpAecoRBQ_B3svKJKA';
   const STORE = "finova_v1_data";
   const $ = id => document.getElementById(id);
   const statusEl = $("cloudStatus");
