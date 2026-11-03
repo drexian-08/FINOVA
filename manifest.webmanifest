@@ -1,0 +1,18 @@
+{
+  "name": "FINOVA — Your Money. Your Future.",
+  "short_name": "FINOVA",
+  "description": "Personal finance dashboard",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#081321",
+  "theme_color": "#081321",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
