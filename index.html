@@ -63,4 +63,9 @@ let ms=[];for(let i=5;i>=0;i--){let d=new Date();d.setDate(1);d.setMonth(d.getMo
 }
 render();
 </script>
+<script>
+if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(err => console.warn("FINOVA offline cache unavailable", err)));
+}
+</script>
 </body></html>
