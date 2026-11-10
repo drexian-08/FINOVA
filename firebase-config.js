@@ -1,11 +1,9 @@
-/* Paste the Firebase Web App config from Firebase Console here.
-   Keep apiKey/authDomain/projectId/appId from the same Firebase project.
-*/
+/* Firebase Web App config for FINOVA. */
 window.FINOVA_FIREBASE_CONFIG = {
-  apiKey: "PASTE_FIREBASE_API_KEY",
-  authDomain: "PASTE_PROJECT_ID.firebaseapp.com",
-  projectId: "PASTE_PROJECT_ID",
-  storageBucket: "PASTE_PROJECT_ID.firebasestorage.app",
-  messagingSenderId: "PASTE_MESSAGING_SENDER_ID",
-  appId: "PASTE_FIREBASE_APP_ID"
+  apiKey: "AIzaSyBuLKz3Fls4sJi56hKEv3eugP2H8i6chRw",
+  authDomain: "finova-1bca9.firebaseapp.com",
+  projectId: "finova-1bca9",
+  storageBucket: "finova-1bca9.firebasestorage.app",
+  messagingSenderId: "1042473460116",
+  appId: "1:1042473460116:web:4bd830d5860cb33841ef81"
 };
