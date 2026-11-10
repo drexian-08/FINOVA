@@ -1,4 +1,4 @@
-const CACHE = "finova-static-v6";
+const CACHE = "finova-static-v7";
 const FILES = ["./", "./index.html", "./manifest.webmanifest", "./favicon.svg", "./firebase.js", "./firebase-config.js"];
 self.addEventListener("install", event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES)));
