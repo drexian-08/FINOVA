@@ -7,7 +7,7 @@
   const statusEl = $("cloudStatus");
   const cfg = window.FINOVA_FIREBASE_CONFIG;
 
-  if (!cfg || !cfg.apiKey || !cfg.projectId || !cfg.appId) {
+  if (!cfg || !cfg.apiKey || cfg.apiKey.startsWith("PASTE_") || !cfg.projectId || cfg.projectId.startsWith("PASTE_") || !cfg.appId || cfg.appId.startsWith("PASTE_")) {
     if (statusEl) statusEl.textContent = "Firebase belum dikonfigurasi. Tambah Firebase web config dahulu.";
     return;
   }
