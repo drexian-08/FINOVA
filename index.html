@@ -62,7 +62,7 @@ $('analyticsSummary').innerHTML='<div class="item"><span class="muted">Pendapata
 async function refreshGoldSpot(){
 const btn=$('refreshGoldBtn'),status=$('liveGoldUpdated');btn.disabled=true;btn.textContent='Updating…';status.textContent='Mengambil harga spot 999…';
 try{
-const response=await fetch('https://api.hargaemas.my/prices',{cache:'no-store'});
+const response=await fetch('https://www.hargaemas.my/api/gold-prices.json',{cache:'no-store'});
 if(!response.ok)throw new Error('HTTP '+response.status);
 const payload=await response.json(),perKg=Number(payload?.prices?.spotSellRmPerKg);
 if(!Number.isFinite(perKg)||perKg<=0)throw new Error('Format harga tidak sah');
@@ -71,7 +71,7 @@ data.liveSpot={price999:perKg/1000,updated:stamp,isStale:Boolean(payload.isStale
 save();
 status.textContent=(data.liveSpot.isStale?'Data cache/lapuk · ':'Dikemas kini · ')+new Date(stamp).toLocaleString('en-MY')+' · HargaEmas.my';
 }catch(err){
-status.textContent='Harga live tak dapat dimuatkan sekarang. Semak internet atau masukkan harga manual. ('+String(err.message||err)+')';
+status.textContent='Harga live belum dapat dimuatkan. Cuba lagi sebentar atau gunakan harga manual. ('+String(err.message||err)+')';
 }finally{btn.disabled=false;btn.textContent='Refresh market price';}
 }
 function useLiveGoldPrice(){
